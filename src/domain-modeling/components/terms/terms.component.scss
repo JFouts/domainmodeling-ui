@@ -1,0 +1,14 @@
+.terms-container {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.term {
+  width: 300px;
+  margin: 5px;
+}
+
+.mat-card-title {
+  font-size: 1.1em;
+}

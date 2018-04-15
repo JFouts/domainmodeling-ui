@@ -1,0 +1,2 @@
+<app-dropdown name="Domain" [options]="domains" [(selection)]="selectedDomain" (selectionChange)="onDomainSelected($event)"></app-dropdown>
+<app-dropdown *ngIf="selectedDomain" [options]="contexts" name="Bounded Context" [(selection)]="selectedContext"></app-dropdown>

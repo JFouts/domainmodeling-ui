@@ -1,0 +1,12 @@
+<mat-form-field>
+  <mat-select placeholder="Select a {{name}}"
+    [(value)]="selection"
+    (change)="onChange($event)">
+      <mat-option *ngFor="let option of options" [value]="option.id">
+          {{option.name}}
+      </mat-option>
+      <mat-option value="0">
+          Add a New {{name}}...
+      </mat-option>
+  </mat-select>
+</mat-form-field>
