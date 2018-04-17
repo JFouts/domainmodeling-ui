@@ -1,0 +1,23 @@
+.rules-container {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.rule {
+  flex-basis: 25%;
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.mat-card-title {
+  font-size: 1.1em;
+}
+
+button {
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}

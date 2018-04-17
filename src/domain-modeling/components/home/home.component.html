@@ -1,4 +1,12 @@
 <app-dropdown name="Domain" [options]="domains" [(selection)]="selectedDomain" (selectionChange)="onDomainSelected($event)"></app-dropdown>
 <app-dropdown *ngIf="selectedDomain" [options]="contexts" name="Bounded Context" [(selection)]="selectedContext"></app-dropdown>
 
-<app-terms></app-terms>
+<mat-tab-group>
+  <mat-tab label="Terms">
+    <app-terms></app-terms>
+  </mat-tab>
+  <mat-tab label="Rules">
+    <app-rules></app-rules>
+  </mat-tab>
+</mat-tab-group>
+

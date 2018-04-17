@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent, TermsComponent, DropdownComponent } from '../domain-modeling/components';
 import { DomainService } from '../domain-modeling/services';
+import { RulesComponent } from '../domain-modeling/components/rules';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     TermsComponent,
+    RulesComponent,
     DropdownComponent
   ],
   imports: [
